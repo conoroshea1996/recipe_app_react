@@ -9,7 +9,7 @@ const Recipe = ({title,calories,image,ingredients}) =>{
             <ol>{ingredients.map(ingredient =>(
                 <li>{ingredient.text}</li>
             ))}</ol>
-            <p>Calories: <span>{calories.toFixed(1)}</span></p>
+            <p>Calories: <span>{Math.round(calories)}</span></p>
         </div>
     );
 }
